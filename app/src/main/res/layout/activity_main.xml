@@ -68,7 +68,7 @@
                     android:id="@+id/et_name"
                     android:layout_width="250dp"
                     android:layout_height="40dp"
-                    android:text="Enter Your Name!"
+                    android:hint="Enter Your Name!"
                     android:textSize="20sp"
                     android:textColor="#50000000"
                     android:background="#30000000"
