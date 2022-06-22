@@ -103,11 +103,11 @@ public class UserInterface extends AppCompatActivity {
         PdfDocument.PageInfo mypageInfo = new PdfDocument.PageInfo.Builder(pagewidth, pageHeight, 1).create();
         PdfDocument.Page myPage = pdfDocument.startPage(mypageInfo);
         title.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.NORMAL));
-        title.setTextSize(15);
-        title.setColor(ContextCompat.getColor(this, R.color.purple_200));
+        title.setTextSize(25);
+        title.setColor(ContextCompat.getColor(this, R.color.black));
         Canvas canvas = myPage.getCanvas();
-        canvas.drawText("Balance: "+bal, 10, 10, title);
-        canvas.drawText("Expenditure: "+deb, 10, 20, title);
+        canvas.drawText("Balance: "+bal, 20, 50, title);
+        canvas.drawText("Expenditure: "+deb, 20, 80, title);
         pdfDocument.finishPage(myPage);
 //        File file = new File(Environment.getExternalStorageDirectory(), "Monthly_Report.pdf");
 //        try {
